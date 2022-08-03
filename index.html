@@ -6,30 +6,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Guitar </title>
+  <title>Sign Up | Acoustic Academy </title>
 </head>
 
 <body>
-
   <div class="container">
     <div class="sidebar">
-      <img class="sidebar-image" src="assets/images/luwadlin-bosman-vWqS1iTz0hg-unsplash.jpg" alt="black and white guitar close up.">
+      <img class="sidebar-image" src="assets/images/luwadlin-bosman-vWqS1iTz0hg-unsplash.jpg"
+        alt="black and white guitar close up.">
       <div class="logo-header">
-        <img src="assets/images/1623617629aqoustic-guitar-clipart.png" alt="guitar inside a guitar pick logo" class="logo">
+        <img src="assets/images/1623617629aqoustic-guitar-clipart.png" alt="guitar inside a guitar pick logo"
+          class="logo">
         <h1 class="sidebar-header">Acoustic Academy</h1>
       </div>
       <p class="image-credits">
-        Photo by <a href="https://unsplash.com/@luwadlinbosman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luwadlin Bosman</a> on
-        <a href="https://unsplash.com/s/photos/guitar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        Photo by <a
+          href="https://unsplash.com/@luwadlinbosman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luwadlin
+          Bosman</a> on
+        <a
+          href="https://unsplash.com/s/photos/guitar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </p>
     </div>
-    <div class="form-container">
-      <form>
-        <label for="user_name">Name</label>
-        <input type="text" name="user_name" id="user_name">
-        <button>Submit</button>
-      </form>
+    <div class="form-column">
+      <div class="signup-pitch">
+        <p>
+          It's one month away and it's only for subscribers!
+          Introducing Acoustic Academy: a series of guided video courses for acoustic guitar players of all abilities.
+        </p>
+
+          <ul class="benefits-list">For only $9.99/month you get:
+            <li class="benefit">40+ hours of instructional material</li>
+            <li class="benefit">Musical notation and tablature for hundreds of acoustic classics!</li>
+            <li class="benefit">Vidoes covering various genres, including rock, pop, jazz, classical!</li>
+          </ul>
+        <p>
+          New subscribers get four free hours of content!
+        </p>
+      </div>
+      <div class="form-container">
+        <form id="signup-form" class="form-fields">
+          <div class="sign-up">
+            <strong><em>Sign up today </em></strong> for your free introductory acoustic guitar course at 
+            <a href="#" class="brand-name">Acoustic Academy</a>.
+          </div>
+          <div class="field">
+            <label for="first_name">first name</label>
+            <input id="first_name" type="text" name="first_name">
+          </div>
+          <div class="field">
+            <label for="last_name">last name</label>
+            <input id="last_name" type="text" name="last_name">
+          </div>
+          <div class="field">
+            <label for="email">email</label>
+            <input id="email" type="email" name="email">
+          </div>
+          <div class="field">
+            <label for="phone">phone number</label>
+            <input id="phone" type="tel" name="phone">
+          </div>
+          <div class="field">
+            <label for="password">password</label>
+            <input id="password" type="password" name="password">
+          </div>
+          <div class="field">
+            <label for="password_confirmation">password confirmation</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+          </div>
+        </form>
+      </div>
+      <div class="signup-login">
+        <button class="button">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
