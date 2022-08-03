@@ -190,12 +190,6 @@ button {
   margin-bottom: 16px;
 }
 
-/* hidden input. submit form by clicking label. 
-allows placing button outside the form element */
-#submit-form {
-  display: none;
-}
-
 .button {
   padding: 16px 48px;
   font-size: 1.24rem;
