@@ -10,11 +10,6 @@
   --dark-aquamarine: rgb(100, 216, 177);
 }
 
-html {
-  /* overflow-y: hidden; */
-  /* overflow: scroll; */
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
@@ -28,6 +23,25 @@ a {
 
 p {
   padding: 12px 0;
+}
+
+input {
+  width: 300px;
+  height: 36px;
+  border-radius: 4px;
+  border-color: lightgrey;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button {
+  border: none;
 }
 
 .container {
@@ -89,12 +103,11 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .signup-pitch {
   font-weight: 400;
-  margin-left: 32px;
+  margin-left: 48px;
   max-width: 960px;
 }
 
@@ -121,11 +134,16 @@ p {
 }
 
 .form-fields {
-  margin-left: 32px;
+  margin-left: 48px;
+  padding: 24px 0;
 }
 
 .field {
-  margin: 12px 0;
+  margin: 12px 48px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .brand-name {
@@ -137,8 +155,8 @@ p {
 }
 
 .signup-login {
-  padding: 36px 0;
-  margin-left: 32px;
+  padding: 48px 0;
+  margin-left: 48px;
   font-weight: 600;
 }
 
@@ -153,7 +171,7 @@ allows placing button outside the form element */
 }
 
 .button {
-  padding: 12px 24px;
+  padding: 16px 48px;
   font-size: 1.2rem;
   font-weight: 600;
   border-color: var(--dark-aquamarine);
