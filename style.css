@@ -44,6 +44,10 @@ input:focus {
   box-shadow: 3px 3px 5px var(--lighter-gray);
 }
 
+fieldset {
+  border: none;
+}
+
 .error {
   border: solid 3px red!important;
 }

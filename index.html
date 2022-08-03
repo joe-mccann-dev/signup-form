@@ -47,42 +47,47 @@
       </div>
       <div class="form-container">
         <form id="signup-form" class="form-fields">
-          <div class="sign-up">
-            <strong><em>Sign up today </em></strong> for your free introductory acoustic guitar course at
-            <a href="#" class="brand-name">Acoustic Academy</a>.
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="first_name">first name</label>
-              <input id="first_name" type="text" name="first_name" placeholder="Eric" required>
+          <fieldset>
+            <div class="sign-up">
+              <legend>
+                <strong><em>Sign up today </em></strong> for your free introductory acoustic guitar course at
+                <a href="#" class="brand-name">Acoustic Academy</a>.
+              </legend>
             </div>
-            <div class="field">
-              <label for="last_name">last name</label>
-              <input id="last_name" type="text" name="last_name" placeholder="Clapton" required>
+            <div class="form-row">
+              <div class="field">
+                <label for="first_name">first name</label>
+                <input id="first_name" type="text" name="first_name" placeholder="Eric" required>
+              </div>
+              <div class="field">
+                <label for="last_name">last name</label>
+                <input id="last_name" type="text" name="last_name" placeholder="Clapton" required>
+              </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="email">email</label>
-              <input id="email" type="email" name="email" placeholder="name@example.com" required>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">email</label>
+                <input id="email" type="email" name="email" placeholder="name@example.com" required>
+              </div>
+              <div class="field">
+                <label for="phone">phone number (optional) </label>
+                <input id="phone" type="tel" pattern="^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$" placeholder="555-555-1234" name="phone">
+              </div>
             </div>
-            <div class="field">
-              <label for="phone">phone number (optional) </label>
-              <input id="phone" type="tel" pattern="^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$" placeholder="555-555-1234" name="phone">
+            <div class="form-row">
+              <div class="field">
+                <label for="password">password (6 character minimum)</label>
+                <input id="password" type="password" name="password" minlength="6" required>
+                <span class="password-error hidden">*Passwords do not match</span>
+              </div>
+              <div class="field">
+                <label for="password-confirmation">password confirmation</label>
+                <input type="password" id="password-confirmation" name="password-confirmation" required>
+                <input type="submit" id="submit-form" class="hidden">
+              </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="password">password (6 character minimum)</label>
-              <input id="password" type="password" name="password" minlength="6" required>
-              <span class="password-error hidden">*Passwords do not match</span>
-            </div>
-            <div class="field">
-              <label for="password-confirmation">password confirmation</label>
-              <input type="password" id="password-confirmation" name="password-confirmation" required>
-              <input type="submit" id="submit-form" class="hidden">
-            </div>
-          </div>
+          </fieldset>
+          
         </form>
       </div>
       <div class="signup-login">
