@@ -54,31 +54,32 @@
           <div class="form-row">
             <div class="field">
               <label for="first_name">first name</label>
-              <input id="first_name" type="text" name="first_name">
+              <input id="first_name" type="text" name="first_name" required>
             </div>
             <div class="field">
               <label for="last_name">last name</label>
-              <input id="last_name" type="text" name="last_name">
+              <input id="last_name" type="text" name="last_name" required>
             </div>
           </div>
           <div class="form-row">
             <div class="field">
               <label for="email">email</label>
-              <input id="email" type="email" name="email">
+              <input id="email" type="email" name="email" required>
             </div>
             <div class="field">
-              <label for="phone">phone number</label>
-              <input id="phone" type="tel" name="phone">
+              <label for="phone">phone number (optional) </label>
+              <input id="phone" type="tel" pattern="^(\([0-9]{3}\)|[0-9]{3}-)[0-9]{3}-[0-9]{4}$" placeholder="555-555-1234" name="phone">
             </div>
           </div>
           <div class="form-row">
             <div class="field">
-              <label for="password">password</label>
-              <input id="password" type="password" name="password">
+              <label for="password">password (6 character minimum)</label>
+              <input id="password" type="password" name="password" minlength="6" required>
+              <span class="password-error hidden">*Passwords do not match</span>
             </div>
             <div class="field">
-              <label for="password_confirmation">password confirmation</label>
-              <input type="password" id="password_confirmation" name="password_confirmation">
+              <label for="password-confirmation">password confirmation</label>
+              <input type="password" id="password-confirmation" name="password-confirmation" required>
               <input type="submit" id="submit-form">
             </div>
           </div>
@@ -94,6 +95,23 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const form = document.getElementById('signup-form')
+    const password = document.getElementById('password')
+    const passwordConfirmation = document.getElementById('password-confirmation')
+    const passwordErrorMessage = document.querySelector('.password-error')
+
+    const checkPasswordsMatch = (event) => {      
+      if (password.value !== passwordConfirmation.value) {
+        password.classList.add('error')
+        passwordConfirmation.classList.add('error')
+        passwordErrorMessage.classList.remove('hidden')
+        event.preventDefault();
+      }
+    };
+    form.addEventListener('submit', checkPasswordsMatch)
+  </script>
 </body>
 
 </html>
