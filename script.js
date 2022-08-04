@@ -1,3 +1,4 @@
+
 const form = document.getElementById('signup-form')
 const password = document.getElementById('password')
 const passwordConfirmation = document.getElementById('password-confirmation')
@@ -13,19 +14,19 @@ const checkPasswordsMatch = (event) => {
 };
 
 const checkPasswordValidity = (event) => {
-  const passwordLength = event.target.value.length
-  let validPassword = passwordLength >= 6
+  const target = event.target
+  let validPassword = target.validity.valid
 
-  if (event.target === passwordConfirmation) {
+  if (target === passwordConfirmation) {
     if (passwordConfirmation.value !== password.value ) {
       validPassword = false
     }
   }
 
   if (validPassword) {
-    event.target.classList.add('success')
+    target.classList.add('success')
   } else {
-    event.target.classList.remove('success')
+    target.classList.remove('success')
   }
 };
 
