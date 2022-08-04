@@ -12,8 +12,7 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <img class="sidebar-image" src="assets/images/luwadlin-bosman-vWqS1iTz0hg-unsplash.jpg"
-        alt="black and white guitar close up.">
+      <img class="sidebar-image" src="assets/images/luwadlin-bosman-vWqS1iTz0hg-unsplash.jpg" alt="black and white acoustic guitar close up.">
       <div class="logo-header">
         <img src="assets/images/1623617629aqoustic-guitar-clipart.png" alt="guitar inside a guitar pick logo"
           class="logo">
@@ -100,23 +99,7 @@
       </div>
     </div>
   </div>
-
-  <script>
-    const form = document.getElementById('signup-form')
-    const password = document.getElementById('password')
-    const passwordConfirmation = document.getElementById('password-confirmation')
-    const passwordErrorMessage = document.querySelector('.password-error')
-
-    const checkPasswordsMatch = (event) => {      
-      if (password.value !== passwordConfirmation.value) {
-        password.classList.add('error')
-        passwordConfirmation.classList.add('error')
-        passwordErrorMessage.classList.remove('hidden')
-        event.preventDefault();
-      }
-    };
-    form.addEventListener('submit', checkPasswordsMatch)
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -52,6 +52,10 @@ fieldset {
   border: solid 3px red!important;
 }
 
+.success {
+  border: solid 3px green!important;
+}
+
 .hidden {
   display: none;
 }
