@@ -81,6 +81,7 @@ button {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* BEGIN SIDEBAR */
@@ -215,6 +216,11 @@ button {
     display: none;
   }
 
+  .form-column {
+    display: block;
+    margin: 24px auto;
+  }
+
   .logo-header {
     position: static;
     display: block;
@@ -229,7 +235,7 @@ button {
     justify-content: center;
     align-items: center;
     width: 50%;
-    margin: auto;
+    margin: 24px auto;
   }
 
   .logo {
